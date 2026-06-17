@@ -49,7 +49,7 @@ export default function DiamondIntegrityClient() {
                <FileCheck className="w-10 h-10 text-[#C9A84C] mb-6" />
                <h3 className="text-2xl font-light text-[#FAF7F2] mb-4">GIA Grading Reports</h3>
                <p className="text-[#C4BAB0] text-sm leading-relaxed font-light">
-                 A diamond certification or a grading report is a document provided by expert gemologists who assess the quality of a diamond, including its cut, clarity, polish, and dimensions. The GIA is the world's leading diamond grading organization.
+                 A diamond certification or a grading report is a document provided by expert gemologists who assess the quality of a diamond, including its cut, clarity, polish, and dimensions. The <a href="https://www.gia.edu" target="_blank" rel="noopener noreferrer" className="text-[#C9A84C] hover:text-[#FAF7F2] hover:underline font-semibold" title="Official GIA Website">GIA (Gemological Institute of America)</a> is the world's leading diamond grading organization.
                </p>
             </div>
             <div className="order-1 md:order-2 space-y-4">
@@ -89,7 +89,7 @@ export default function DiamondIntegrityClient() {
                <ShieldCheck className="w-10 h-10 text-[#C9A84C] mb-6" />
                <h3 className="text-2xl font-light text-[#FAF7F2] mb-4">Complete Transparency</h3>
                <p className="text-[#C4BAB0] text-sm leading-relaxed font-light">
-                 Vees Star Diamonds provides a GIA certificate for every Solitaire purchased. The GIA certificate provides in-depth information on the cut, clarity, color, and caratage of the solitaire.
+                 Vees Star Diamonds provides an official <a href="https://www.gia.edu" target="_blank" rel="noopener noreferrer" className="text-[#C9A84C] hover:text-[#FAF7F2] hover:underline font-semibold" title="Verify GIA Certificate">GIA certificate</a> for every Solitaire purchased. The GIA certificate provides in-depth information on the cut, clarity, color, and caratage of the solitaire.
                </p>
             </div>
           </motion.div>

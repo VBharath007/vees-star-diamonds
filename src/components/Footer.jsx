@@ -33,6 +33,11 @@ export default function Footer() {
             <ShieldCheck className="w-3.5 h-3.5 text-[#C9A84C]" />
             <span>GIA Certified Diamond Registry</span>
           </div>
+          <div className="flex items-center space-x-4 pt-1">
+            <a href="https://www.facebook.com/veesstardiamonds" target="_blank" rel="noopener noreferrer" className="text-xs text-[#C4BAB0] hover:text-[#C9A84C] transition-colors uppercase font-bold tracking-wider" title="Follow Vees Star Diamonds on Facebook">Facebook</a>
+            <span className="text-[#C9A84C]/30">|</span>
+            <a href="https://www.instagram.com/veesstardiamonds" target="_blank" rel="noopener noreferrer" className="text-xs text-[#C4BAB0] hover:text-[#C9A84C] transition-colors uppercase font-bold tracking-wider" title="Follow Vees Star Diamonds on Instagram">Instagram</a>
+          </div>
         </div>
 
         {/* Quick Links & Services */}
