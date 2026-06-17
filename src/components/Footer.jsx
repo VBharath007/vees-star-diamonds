@@ -17,11 +17,8 @@ export default function Footer() {
         {/* Brand Column */}
         <div className="md:col-span-4 flex flex-col space-y-5 text-center md:text-left items-center md:items-start">
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 relative flex items-center justify-center bg-gradient-to-br from-[#0B3C8F] to-[#041F50] border border-[#C9A84C]/20 rounded-lg p-1.5 shadow-lg">
-              <svg viewBox="0 0 100 100" className="w-full h-full fill-none" xmlns="http://www.w3.org/2000/svg">
-                <polygon points="50,5 64,36 98,38 72,59 80,93 50,73 20,93 28,59 2,38 36,36" stroke="#C9A84C" strokeWidth="4.5" />
-                <polygon points="50,28 65,43 50,70 35,43" fill="rgba(201,168,76,0.08)" stroke="rgba(255,255,255,0.5)" strokeWidth="3.5" />
-              </svg>
+            <div className="w-12 h-12 relative flex items-center justify-center bg-gradient-to-br from-[#0B3C8F] to-[#041F50] border border-[#C9A84C]/20 rounded-lg overflow-hidden shadow-lg">
+              <img src="/VEES STAR LOGO 1.png" alt="Vees Star Diamonds Logo" className="w-full h-full object-cover scale-[1.05]" />
             </div>
             <div className="flex flex-col">
               <span className="text-sm font-bold tracking-[0.2em] text-[#FAF7F2] uppercase leading-none">Vees Star</span>
@@ -43,12 +40,12 @@ export default function Footer() {
           <h5 className="text-[12px] font-bold tracking-widest text-[#C9A84C] uppercase">Navigation & Services</h5>
           {/* Changed link text color to pure white with a gold hover effect */}
           <div className="flex flex-col space-y-2.5 text-[11px] font-medium text-white/90">
-            <Link href="/" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block">Home</Link>
-            <Link href="/about" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block">About Us</Link>
-            <Link href="/blog" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block">Learn and Explore (Blog)</Link>
-            <Link href="/lifetime-of-service" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block mt-2">Lifetime of Service</Link>
-            <Link href="/contact" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block">Book Appointment</Link>
-            <Link href="/wfh-franchise" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block">WFH Franchise</Link>
+            <Link href="/" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block" title="Vees Star Diamonds Home | GIA Diamond Showroom Chennai & Karaikudi">Home</Link>
+            <Link href="/about" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block" title="About Vees Star Diamonds | Diamond Goldsmithing Heritage & Standards">About Us</Link>
+            <Link href="/blog" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block" title="Guides on Diamond Sourcing, Care & Trends | Learn & Explore">Learn and Explore (Blog)</Link>
+            <Link href="/lifetime-of-service" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block mt-2" title="Lifetime Diamond Warranty, Sizing & Service Policies">Lifetime of Service</Link>
+            <Link href="/contact" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block" title="Book a Private Diamond Consultation Appointment in Anna Nagar, Chennai">Book Appointment</Link>
+            <Link href="/wfh-franchise" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block" title="Join Vees Star Diamonds Work From Home Franchise Business">WFH Franchise</Link>
           </div>
         </div>
 
@@ -57,13 +54,13 @@ export default function Footer() {
           <h5 className="text-[12px] font-bold tracking-widest text-[#C9A84C] uppercase">Gallery</h5>
           {/* Changed link text color to pure white with a gold hover effect */}
           <div className="flex flex-col space-y-2.5 text-[11px] font-medium text-white/90">
-            <Link href="/gallery" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block text-[#C9A84C] font-bold">Campaign Lookbook</Link>
-            <Link href="/gallery" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block">All Collections</Link>
-            <Link href="/custom-build" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block">Custom Rings</Link>
-            <Link href="/solitaires" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block">Diamond Rings</Link>
-            <Link href="/gallery/pendants" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block">Pendants</Link>
-            <Link href="/gallery/earrings" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block">Ear Rings</Link>
-            <Link href="/gallery/bracelets" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block">Bracelets</Link>
+            <Link href="/gallery" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block text-[#C9A84C] font-bold" title="Sovereign Heritage Diamond Jewellery Collection Campaign Lookbook">Campaign Lookbook</Link>
+            <Link href="/gallery" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block" title="Browse Handcrafted Diamond Jewellery Collections">All Collections</Link>
+            <Link href="/custom-build" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block" title="Design Custom Diamond Rings Online | 3D Solitaire Configurator">Custom Rings</Link>
+            <Link href="/solitaires" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block" title="Shop GIA Certified Solitaire Diamond Rings | Platinum Solitaires">Diamond Rings</Link>
+            <Link href="/gallery/pendants" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block" title="Handcrafted Solitaire Diamond Pendants & Necklaces">Pendants</Link>
+            <Link href="/gallery/earrings" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block" title="Handcrafted Solitaire Diamond Earrings & Studs">Ear Rings</Link>
+            <Link href="/gallery/bracelets" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block" title="Handcrafted Solitaire Diamond Bracelets & Bangles">Bracelets</Link>
           </div>
         </div>
 
@@ -76,13 +73,13 @@ export default function Footer() {
               <MapPin className="w-4 h-4 text-[#C9A84C] shrink-0 mt-0.5" />
               <span>W-182, North Main Rd, Anna Nagar West Extension, Chennai, Tamil Nadu 600101</span>
             </div>
-            <div className="flex items-center space-x-3">
-              <Gem className="w-4 h-4 text-[#C9A84C]" />
-              <span>Phone: +91 9383007477</span>
+            <div className="flex items-center space-x-3 text-left">
+              <Gem className="w-4 h-4 text-[#C9A84C] shrink-0 mt-0.5" />
+              <span>Phone: +91 93830 07477 / +91 98848 56057</span>
             </div>
-            <div className="flex items-center space-x-3">
-              <Mail className="w-4 h-4 text-[#C9A84C]" />
-              <a href="mailto:info@vstardiamonds.com" className="hover:text-[#C9A84C] transition-colors break-all">info@vstardiamonds.com</a>
+            <div className="flex items-center space-x-3 text-left">
+              <Mail className="w-4 h-4 text-[#C9A84C] shrink-0 mt-0.5" />
+              <a href="mailto:vsdjbusiness@gmail.com" className="hover:text-[#C9A84C] transition-colors break-all" title="Email Vees Star Diamonds customer support">vsdjbusiness@gmail.com</a>
             </div>
           </div>
         </div>
@@ -94,9 +91,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 mt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-[#C4BAB0] font-semibold tracking-widest uppercase gap-4 text-center">
         <span>© 2026 Vees Star Diamonds. All rights reserved.</span>
         <div className="flex space-x-6">
-          <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-          <a href="/terms-off-use" className="hover:text-white transition-colors">Terms of Service</a>
-          <a href="/contact" className="text-[#C9A84C] hover:text-[#E8D5A0] font-bold transition-colors">VIP Consultation</a>
+          <a href="#" className="hover:text-white transition-colors" title="Vees Star Diamonds Privacy Policy">Privacy Policy</a>
+          <a href="/terms-off-use" className="hover:text-white transition-colors" title="Vees Star Diamonds Terms of Service">Terms of Service</a>
+          <a href="/contact" className="text-[#C9A84C] hover:text-[#E8D5A0] font-bold transition-colors" title="Book a Private VIP Diamond Appointment">VIP Consultation</a>
         </div>
       </div>
     </footer>

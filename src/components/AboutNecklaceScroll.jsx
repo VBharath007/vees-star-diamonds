@@ -112,7 +112,7 @@ export default function AboutNecklaceScroll() {
 
     let loadedEssential = 0;
     let indexInOrder = 0;
-    const maxConcurrency = mobile ? 2 : 6;
+    const maxConcurrency = 6;
     let activeDownloads = 0;
 
     const startNextDownload = () => {
@@ -192,7 +192,7 @@ export default function AboutNecklaceScroll() {
   }, []);
 
   useEffect(() => {
-    if (isMobile || !hasScrolled) return;
+    if (isLoading) return;
 
     const abortController = new AbortController();
 
@@ -278,7 +278,7 @@ export default function AboutNecklaceScroll() {
     return () => {
       abortController.abort();
     };
-  }, [hasScrolled]);
+  }, [isLoading]);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,

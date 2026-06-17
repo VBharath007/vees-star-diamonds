@@ -23,6 +23,12 @@ export const metadata = {
     images: ["/og-image.jpg"],
   },
   alternates: { canonical: "https://www.veesstardiamonds.com/karaikudi" },
+  other: {
+    "geo.region": "IN-TN",
+    "geo.placename": "Karaikudi, Tamil Nadu, India",
+    "geo.position": "10.0734;78.7738",
+    "ICBM": "10.0734, 78.7738",
+  },
 };
 
 export default function KaraikudiPage() {

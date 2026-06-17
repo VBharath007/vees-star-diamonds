@@ -7,17 +7,20 @@ const cards = [
   {
     icon: Compass,
     title: "Chettinad Ratios",
-    body: "Chettinad architecture utilizes strict visual grids to distribute weight. Similarly, we design claw settings with balanced spatial distributions to suspend solitaires safely at every angle.",
+    body: "We translate the strict visual grids of Chettinad architecture into balanced micro-prong layouts. This distributes physical weight evenly, securing solitaires safely at every viewing angle.",
+    bgImage: "/karakudi/left_optimized.jpg"
   },
   {
     icon: ShieldCheck,
     title: "Ancestral Metallurgy",
-    body: "We employ centuries-old lost-wax casting methods combined with modern high-vacuum platinum alloy systems. This provides strong, warp-resistant settings that last generations.",
+    body: "We employ ancestral lost-wax casting methods combined with modern high-vacuum platinum alloy systems. This provides incredibly strong, warp-resistant settings designed to endure for generations.",
+    bgImage: "/prong_setting.png"
   },
   {
     icon: Heart,
     title: "Madras Burnishing",
-    body: "The metal undergoes high-grade hand-burnishing using natural friction compounds. This results in a liquid-mirror surface that reflects diamond prisms at every viewing angle.",
+    body: "The metal undergoes high-grade hand-burnishing using premium natural friction compounds. This results in a liquid-mirror surface reflecting maximum diamond brilliance at every viewing angle.",
+    bgImage: "/diamond_polishing.png"
   },
 ];
 
@@ -73,31 +76,55 @@ export default function KaraikudiClient() {
             </motion.a>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
-            className="lg:col-span-5 relative h-[380px] rounded-3xl overflow-hidden border border-[#C9A84C]/15 shadow-xl"
-          >
-            <div
-              className="absolute inset-0 bg-cover bg-center"
-              style={{
-                backgroundImage: "url('/Product%20images/2.jpg')",
-              }}
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0A0806]/95 via-[#0A0806]/30 to-transparent" />
-            {/* Gold shimmer lines */}
-            <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C9A84C]/50 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C9A84C]/30 to-transparent" />
-            <div className="absolute bottom-6 left-6 text-left space-y-1">
-              <span className="text-[10px] tracking-widest text-[#C9A84C] uppercase font-bold">
-                Est. 1978
-              </span>
-              <h4 className="text-lg font-semibold text-[#FAF7F2]">
-                Our Ancestral Workshop
-              </h4>
-            </div>
-          </motion.div>
+          <div className="lg:col-span-5 grid grid-cols-2 gap-4">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1, ease: [0.4, 0, 0.2, 1] }}
+              className="relative h-[320px] sm:h-[380px] rounded-2xl overflow-hidden border border-[#C9A84C]/15 shadow-xl group"
+            >
+              <div
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                style={{
+                  backgroundImage: "url('/karakudi/left_optimized.jpg')",
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0A0806]/95 via-[#0A0806]/10 to-transparent" />
+              <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C9A84C]/40 to-transparent" />
+              <div className="absolute bottom-4 left-4 text-left">
+                <span className="text-[8px] tracking-widest text-[#C9A84C] uppercase font-bold">
+                  Heritage
+                </span>
+                <h4 className="text-xs sm:text-sm font-semibold text-[#FAF7F2]">
+                  Left Wing Gallery
+                </h4>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2, ease: [0.4, 0, 0.2, 1] }}
+              className="relative h-[320px] sm:h-[380px] rounded-2xl overflow-hidden border border-[#C9A84C]/15 shadow-xl group"
+            >
+              <div
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                style={{
+                  backgroundImage: "url('/karakudi/right_optimized.jpg')",
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0A0806]/95 via-[#0A0806]/10 to-transparent" />
+              <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C9A84C]/40 to-transparent" />
+              <div className="absolute bottom-4 left-4 text-left">
+                <span className="text-[8px] tracking-widest text-[#C9A84C] uppercase font-bold">
+                  Artistry
+                </span>
+                <h4 className="text-xs sm:text-sm font-semibold text-[#FAF7F2]">
+                  Right Wing Gallery
+                </h4>
+              </div>
+            </motion.div>
+          </div>
         </div>
 
         {/* ── GEOMETRY CARDS ── */}
@@ -111,13 +138,38 @@ export default function KaraikudiClient() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1, duration: 0.55, ease: [0.4, 0, 0.2, 1] }}
-                className="shimmer-card glass-panel luxury-shadow luxury-shadow-hover p-8 rounded-2xl border border-[#C9A84C]/8 hover:border-[#C9A84C]/25 transition-luxury space-y-5"
+                className="relative overflow-hidden group p-8 rounded-2xl border border-[#C9A84C]/15 hover:border-[#C9A84C]/35 transition-all duration-500 space-y-6 shadow-2xl flex flex-col justify-start h-[320px]"
               >
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#C9A84C]/10 to-[#C9A84C]/3 border border-[#C9A84C]/15 flex items-center justify-center">
+                {/* Image Background */}
+                <div
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105"
+                  style={{
+                    backgroundImage: `url('${card.bgImage}')`,
+                    height: "320px",
+                  }}
+                />
+                {/* Softer, highly visible background overlay */}
+                <div
+                  className="absolute inset-0 bg-gradient-to-t from-[#0A0806]/95 via-[#0A0806]/50 to-[#0A0806]/20 group-hover:from-[#0A0806]/90 group-hover:via-[#0A0806]/40 group-hover:to-[#0A0806]/15 transition-all duration-500"
+                  style={{
+                    height: "320px",
+                  }}
+                />
+
+                {/* Top Row: Icon */}
+                <div className="relative z-10 w-12 h-12 rounded-xl bg-gradient-to-br from-[#C9A84C]/15 to-[#C9A84C]/5 border border-[#C9A84C]/25 flex items-center justify-center transition-transform duration-500 group-hover:scale-105">
                   <Icon className="w-5 h-5 text-[#C9A84C]" />
                 </div>
-                <h3 className="text-xl font-light text-[#FAF7F2]">{card.title}</h3>
-                <p className="text-sm text-[#C4BAB0] font-light leading-relaxed">{card.body}</p>
+
+                {/* Bottom Row: Content */}
+                <div className="relative z-10 space-y-3">
+                  <h3 className="text-xl font-medium text-[#FAF7F2] group-hover:text-[#C9A84C] transition-colors duration-300">
+                    {card.title}
+                  </h3>
+                  <p className="text-sm text-[#FAF7F2]/90 font-light leading-relaxed">
+                    {card.body}
+                  </p>
+                </div>
               </motion.div>
             );
           })}

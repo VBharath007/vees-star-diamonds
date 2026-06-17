@@ -7,6 +7,12 @@ export const metadata = {
   keywords:
     "best diamond showroom Chennai, GIA certified solitaire Karaikudi, custom diamond rings Tamil Nadu, bespoke bridal jewellery Anna Nagar, Vees Star Diamonds",
   alternates: { canonical: "https://www.veesstardiamonds.com" },
+  other: {
+    "geo.region": "IN-TN",
+    "geo.placename": "Chennai, Tamil Nadu, India",
+    "geo.position": "13.0850;80.2101",
+    "ICBM": "13.0850, 80.2101",
+  },
   openGraph: {
     title: "Vees Star Diamonds | GIA Certified Solitaires Chennai",
     description:
@@ -47,7 +53,7 @@ export default function HomePage() {
       latitude: "13.0850",
       longitude: "80.2101",
     },
-    telephone: "+914445536003",
+    telephone: "+919383007477",
     url: "https://www.veesstardiamonds.com",
     priceRange: "₹₹₹₹",
     openingHoursSpecification: {
@@ -67,13 +73,13 @@ export default function HomePage() {
     "@type": "Organization",
     name: "Vees Star Diamonds",
     url: "https://www.veesstardiamonds.com",
-    logo: "https://www.veesstardiamonds.com/og-image.jpg",
+    logo: "https://www.veesstardiamonds.com/VEES%20STAR%20LOGO%201.png",
     "@id": "https://www.veesstardiamonds.com/#organization",
     description:
       "South India's premier GIA-certified diamond jeweller, combining ancestral Chettinad temple geometry with modern gemmological standards.",
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+914445536003",
+      telephone: "+919383007477",
       contactType: "customer service",
       areaServed: "IN",
       availableLanguage: ["English", "Tamil"],

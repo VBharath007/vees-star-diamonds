@@ -54,8 +54,8 @@ export default function ContactClient() {
             <div className="space-y-5">
               {[
                 { icon: MapPin, label: "Showroom Address", value: "W-182, North Main Rd, Anna Nagar West Extension, Chennai, Tamil Nadu 600101" },
-                { icon: Phone, label: "Telephone Inquiry", value: "+91 44 45536003 / +91 93830 07477" },
-                { icon: Mail, label: "Electronic Mail", value: "contact@veesstardiamonds.com" },
+                { icon: Phone, label: "Telephone Inquiry", value: "+91 93830 07477 / +91 98848 56057" },
+                { icon: Mail, label: "Electronic Mail", value: "vsdjbusiness@gmail.com" },
                 { icon: Clock, label: "Operating Hours", value: "Monday – Saturday: 10:30 AM – 7:30 PM (IST)" },
               ].map((info, idx) => {
                 const Icon = info.icon;

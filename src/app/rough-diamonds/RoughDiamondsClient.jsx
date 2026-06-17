@@ -40,7 +40,7 @@ export default function RoughDiamondsClient() {
           className="w-full max-w-2xl mx-auto rounded-3xl overflow-hidden border border-[#C9A84C]/15 bg-[#14110F] aspect-video md:aspect-[21/10] relative group shadow-2xl"
         >
           <img
-            src="/Product images/7.png"
+            src="/rough daimond/CLEAR FACETS ROUGH (42).webp"
             alt="Rough Diamond Masterpiece"
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[2s] ease-out"
             loading="lazy"
@@ -171,6 +171,87 @@ export default function RoughDiamondsClient() {
           </motion.div>
 
         </div>
+
+        {/* ── ROUGH DIAMONDS GEOMETRY SHOWCASE ── */}
+        <div className="space-y-12 pt-16">
+          <div className="text-center space-y-4 max-w-2xl mx-auto">
+            <div className="badge-gold w-fit mx-auto">
+              <Sparkles className="w-3.5 h-3.5 text-[#C9A84C]" />
+              <span className="text-[10px] tracking-[0.2em] uppercase text-[#C9A84C] font-bold">Nature's Art</span>
+            </div>
+            <h2 className="text-3xl md:text-5xl font-light text-[#FAF7F2]">
+              The Geometry Of <span className="font-display italic gold-gradient-text">Uncut Diamonds</span>
+            </h2>
+            <p className="text-sm text-[#C4BAB0] font-light leading-relaxed max-w-xl mx-auto">
+              Observe the raw octahedral shape, crystalline structures, and natural facets of our ethically imported rough stones before they undergo mapping and cutting.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                url: "/rough daimond/CLEAR FACETS ROUGH (1).webp",
+                title: "Octahedral Crystal Form",
+                desc: "Classic double-pyramid crystal form formed billions of years ago under extreme pressure."
+              },
+              {
+                url: "/rough daimond/CLEAR FACETS ROUGH (30).webp",
+                title: "Trigon Surface Growths",
+                desc: "Triangular indentations on the rough facets that prove natural diamond growth."
+              },
+              {
+                url: "/rough daimond/CLEAR FACETS ROUGH (31).webp",
+                title: "Dodecahedral Raw Form",
+                desc: "A rare 12-sided natural geometry exhibiting rounded faces and high clarity."
+              },
+              {
+                url: "/rough daimond/CLEAR FACETS ROUGH (32).webp",
+                title: "Ethically Sourced Octahedron",
+                desc: "A pure, conflict-free rough diamond selected directly from official mines."
+              },
+              {
+                url: "/rough daimond/CLEAR FACETS ROUGH (33).webp",
+                title: "Crystalline Lattice Structure",
+                desc: "Showing the clean growth grains that our lasers map before faceting begins."
+              },
+              {
+                url: "/rough daimond/CLEAR FACETS ROUGH (42).webp",
+                title: "Premium Uncut Specimen",
+                desc: "A large-carat raw specimen demonstrating exceptional purity and surface lustre."
+              },
+            ].map((stone, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: idx * 0.08 }}
+                whileHover={{ y: -6 }}
+                className="group relative rounded-3xl overflow-hidden border border-[#C9A84C]/10 bg-[#14110F] aspect-[4/3] flex flex-col justify-end shadow-xl hover:border-[#C9A84C]/35 transition-all duration-500"
+              >
+                <img
+                  src={stone.url}
+                  alt={stone.title}
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s] ease-out"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/35 to-transparent transition-opacity duration-500" />
+                <div className="relative z-10 p-6 space-y-1 text-left">
+                  <span className="text-[8px] uppercase tracking-widest text-[#C9A84C] font-bold">
+                    Raw Diamond Geometry
+                  </span>
+                  <h4 className="text-sm font-light text-white tracking-wide">
+                    {stone.title}
+                  </h4>
+                  <p className="text-[10px] text-[#C4BAB0]/90 font-light leading-relaxed">
+                    {stone.desc}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+
       </div>
     </div>
   );

@@ -98,56 +98,46 @@ export default function CustomBuildHero() {
     const loadOrder = [];
     const added = new Set();
 
-    if (mobile) {
-      // Mobile: only load every 8th frame (total ~31 frames) to avoid background downloads during scroll
-      for (let i = 1; i <= totalFrames; i += 8) {
-        loadOrder.push(i);
-      }
-      if (loadOrder[loadOrder.length - 1] !== totalFrames) {
-        loadOrder.push(totalFrames);
-      }
-    } else {
-      // Desktop progressive loading passes
-      // Pass 1: Every 8th frame
-      for (let i = 1; i <= totalFrames; i += 8) {
+    // Progressive passes for both mobile & desktop to ensure ultra-smooth experience
+    // Pass 1: Every 8th frame (blocks preloader, fast initial show)
+    for (let i = 1; i <= totalFrames; i += 8) {
+      loadOrder.push(i);
+      added.add(i);
+    }
+    if (!added.has(totalFrames)) {
+      loadOrder.push(totalFrames);
+      added.add(totalFrames);
+    }
+
+    // Pass 2: Every 4th frame
+    for (let i = 1; i <= totalFrames; i += 4) {
+      if (!added.has(i)) {
         loadOrder.push(i);
         added.add(i);
       }
-      if (!added.has(totalFrames)) {
-        loadOrder.push(totalFrames);
-        added.add(totalFrames);
-      }
+    }
 
-      // Pass 2: Every 4th frame
-      for (let i = 1; i <= totalFrames; i += 4) {
-        if (!added.has(i)) {
-          loadOrder.push(i);
-          added.add(i);
-        }
-      }
-
-      // Pass 3: Every 2nd frame
-      for (let i = 1; i <= totalFrames; i += 2) {
-        if (!added.has(i)) {
-          loadOrder.push(i);
-          added.add(i);
-        }
-      }
-
-      // Pass 4: All remaining frames
-      for (let i = 1; i <= totalFrames; i++) {
-        if (!added.has(i)) {
-          loadOrder.push(i);
-          added.add(i);
-        }
+    // Pass 3: Every 2nd frame
+    for (let i = 1; i <= totalFrames; i += 2) {
+      if (!added.has(i)) {
+        loadOrder.push(i);
+        added.add(i);
       }
     }
 
-    const pass1Threshold = mobile ? loadOrder.length : Math.ceil(totalFrames / 8);
+    // Pass 4: All remaining frames
+    for (let i = 1; i <= totalFrames; i++) {
+      if (!added.has(i)) {
+        loadOrder.push(i);
+        added.add(i);
+      }
+    }
+
+    const pass1Threshold = Math.ceil(totalFrames / 8);
 
     let loadedCountLocal = 0;
     let indexInOrder = 0;
-    const maxConcurrency = mobile ? 2 : 6;
+    const maxConcurrency = 6;
     let activeDownloads = 0;
 
     const startNextDownload = () => {

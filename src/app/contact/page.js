@@ -35,7 +35,7 @@ export default function ContactPage() {
     mainEntity: {
       "@type": "JewelleryStore",
       name: "Vees Star Diamonds",
-      telephone: "+914445536003",
+      telephone: "+919383007477",
       address: {
         "@type": "PostalAddress",
         streetAddress: "W-182, North Main Rd, Anna Nagar West Extension",

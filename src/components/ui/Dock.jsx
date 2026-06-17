@@ -49,11 +49,11 @@ function DockItem({
       <AnimatePresence>
         {isHovered && (
           <motion.div
-            initial={{ opacity: 0, y: 0 }}
-            animate={{ opacity: 1, y: -10 }}
-            exit={{ opacity: 0, y: 0 }}
+            initial={{ opacity: 0, y: -4 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -4 }}
             transition={{ duration: 0.2 }}
-            className="absolute -top-8 left-1/2 w-fit whitespace-nowrap rounded-lg border border-[#C9A84C]/30 bg-[#0E0C0A]/95 backdrop-blur-md px-3 py-1.5 text-xs text-[#C9A84C] font-semibold"
+            className="absolute top-full left-1/2 mt-2.5 w-fit whitespace-nowrap rounded-lg border border-[#C9A84C]/30 bg-[#0E0C0A]/95 backdrop-blur-md px-3 py-1.5 text-xs text-[#C9A84C] font-semibold shadow-xl"
             style={{ x: "-50%" }}
             role="tooltip"
           >

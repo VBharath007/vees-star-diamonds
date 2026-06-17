@@ -24,9 +24,9 @@ const jost = Jost({
 export const metadata = {
   metadataBase: new URL("https://www.veesstardiamonds.com"),
   icons: {
-    icon: "/VEES STAR LOGO.png",
-    shortcut: "/VEES STAR LOGO.png",
-    apple: "/VEES STAR LOGO.png",
+    icon: "/VEES STAR LOGO 1.png",
+    shortcut: "/VEES STAR LOGO 1.png",
+    apple: "/VEES STAR LOGO 1.png",
   },
   title: {
     default: "Vees Star Diamonds | GIA Certified Solitaires Chennai",
@@ -46,6 +46,12 @@ export const metadata = {
   creator: "Vees Star Diamonds",
   publisher: "Vees Star Diamonds",
   category: "jewellery",
+  other: {
+    "geo.region": "IN-TN",
+    "geo.placename": "Chennai, Tamil Nadu, India",
+    "geo.position": "13.0850;80.2101",
+    "ICBM": "13.0850, 80.2101",
+  },
   robots: {
     index: true,
     follow: true,
@@ -90,6 +96,9 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`light ${cormorant.variable} ${jost.variable}`}>
       <head>
         <link rel="preconnect" href="https://api.whatsapp.com" />
+        <link rel="icon" type="image/png" href="/VEES STAR LOGO 1.png" />
+        <link rel="shortcut icon" type="image/png" href="/VEES STAR LOGO 1.png" />
+        <link rel="apple-touch-icon" href="/VEES STAR LOGO 1.png" />
       </head>
       <body className="bg-[#0E0C0A] text-[#FAF7F2] antialiased">
         <ThreeBackgroundWrapper />

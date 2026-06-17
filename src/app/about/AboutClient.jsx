@@ -146,11 +146,94 @@ function RevealSection({ children, delay = 0, className = "" }) {
   );
 }
 
+const atelierTabs = [
+  { key: "design", label: "Design & CAD Studio" },
+  { key: "craft", label: "Artisan Benchwork" },
+  { key: "setting", label: "Setting & Polishing" },
+];
+
+const atelierItems = [
+  {
+    url: "/work image/cad-239174.webp",
+    title: "Digital 3D CAD modeling of custom solitaires",
+    tab: "design",
+    category: "Creative Office",
+  },
+  {
+    url: "/work image/abt-us-1.webp",
+    title: "Inspecting diamond clarity under microscope",
+    tab: "design",
+    category: "Quality Studio",
+  },
+  {
+    url: "/work image/Jewllery 1.webp",
+    title: "Bespoke hand-sketched design scaling",
+    tab: "design",
+    category: "Artistic Conception",
+  },
+  {
+    url: "/work image/IMG-20251112-WA0055.webp",
+    title: "Shaping ring bands with fine precision files",
+    tab: "craft",
+    category: "Atelier Bench",
+  },
+  {
+    url: "/work image/IMG-20251112-WA0056.webp",
+    title: "Calibrating gold parameters at the workbench",
+    tab: "craft",
+    category: "Artisan Workshop",
+  },
+  {
+    url: "/work image/IMG-20251112-WA0058.webp",
+    title: "Aligning platinum components with specialized tweezers",
+    tab: "craft",
+    category: "Metal Calibration",
+  },
+  {
+    url: "/work image/IMG-20251112-WA0059.webp",
+    title: "Verifying structural details post-casting",
+    tab: "craft",
+    category: "Casting Inspection",
+  },
+  {
+    url: "/work image/IMG-20251112-WA0057.webp",
+    title: "Setting micro-diamonds under stereo zoom magnification",
+    tab: "setting",
+    category: "Prong Setting",
+  },
+  {
+    url: "/work image/IMG-20251112-WA0060.webp",
+    title: "Rounding claw tips snuggly over solitaire girdles",
+    tab: "setting",
+    category: "Claw Mounting",
+  },
+  {
+    url: "/work image/IMG-20251112-WA0061.webp",
+    title: "Mirror polishing with high-speed luster buff wheels",
+    tab: "setting",
+    category: "Finish Polishing",
+  },
+  {
+    url: "/work image/IMG-20251112-WA0062.webp",
+    title: "Final quality review of the setting security",
+    tab: "setting",
+    category: "Quality Review",
+  },
+  {
+    url: "/work image/Jewellery 2.webp",
+    title: "Completed customized wedding ring inspection",
+    tab: "setting",
+    category: "Final Masterpiece",
+  },
+];
+
 /* ─────────────────────────── MAIN COMPONENT ─────────────────────────── */
 
 export default function AboutClient({ faqs }) {
   const [activeC, setActiveC] = useState("cut");
   const [openFaq, setOpenFaq] = useState(null);
+  const [activeAtelierTab, setActiveAtelierTab] = useState("design");
+  const filteredAtelierItems = atelierItems.filter((item) => item.tab === activeAtelierTab);
   const active = cContent[activeC];
   const ActiveIcon = cDefs.find((c) => c.key === activeC)?.icon || Sparkles;
 
@@ -329,6 +412,82 @@ export default function AboutClient({ faqs }) {
                     </div>
                   ))}
                 </div>
+              </section>
+            </RevealSection>
+
+            {/* ── INSIDE OUR ATELIER & DESIGN OFFICE ── */}
+            <RevealSection delay={0.05}>
+              <section className="space-y-16 w-full">
+                <div className="text-center space-y-4 max-w-3xl mx-auto">
+                  <span className="text-[9px] uppercase tracking-[0.35em] text-[#C9A84C] font-bold block">
+                    Inside Our Atelier & Office
+                  </span>
+                  <h2 className="text-4xl md:text-5xl font-light text-[#FAF7F2] leading-tight">
+                    Where Artistry Meets{" "}
+                    <span className="font-display italic gold-gradient-text">
+                      Precision
+                    </span>
+                  </h2>
+                  <p className="text-sm text-[#C4BAB0] font-light leading-relaxed max-w-2xl mx-auto">
+                    A behind-the-scenes look into our daily work. From initial CAD blueprints to the physical carving, setting, and mirror-polishing of precious metals, our crew delivers world-class craftsmanship.
+                  </p>
+                </div>
+
+                {/* Tab Controls */}
+                <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-8">
+                  {atelierTabs.map((tab) => (
+                    <button
+                      key={tab.key}
+                      onClick={() => setActiveAtelierTab(tab.key)}
+                      className={`px-6 py-2.5 rounded-full text-[10px] md:text-xs font-semibold uppercase tracking-widest transition-all duration-300 border cursor-pointer ${
+                        activeAtelierTab === tab.key
+                          ? "bg-[#C9A84C] text-[#0E0C0A] border-[#C9A84C] shadow-lg shadow-[#C9A84C]/25"
+                          : "border-[#C9A84C]/20 text-[#C4BAB0] hover:text-[#FAF7F2] hover:border-[#C9A84C]/45"
+                      }`}
+                    >
+                      {tab.label}
+                    </button>
+                  ))}
+                </div>
+
+                {/* Gallery Grid */}
+                <motion.div 
+                  layout
+                  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+                >
+                  <AnimatePresence mode="popLayout">
+                    {filteredAtelierItems.map((item) => (
+                      <motion.div
+                        layout
+                        key={item.url}
+                        initial={{ opacity: 0, scale: 0.92 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0.92 }}
+                        transition={{ duration: 0.4, ease: "easeOut" }}
+                        whileHover={{ y: -6 }}
+                        className="group relative rounded-2xl overflow-hidden border border-[#C9A84C]/10 bg-[#14110F] aspect-[4/3] flex flex-col justify-end shadow-2xl hover:border-[#C9A84C]/35 transition-all duration-500"
+                      >
+                        <img
+                          src={item.url}
+                          alt={item.title}
+                          className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s] ease-out"
+                          loading="lazy"
+                        />
+                        {/* Elegant overlay gradient */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/35 to-transparent transition-opacity duration-500" />
+                        
+                        <div className="relative z-10 p-6 space-y-1.5 text-left">
+                          <span className="text-[8px] uppercase tracking-widest text-[#C9A84C] font-bold">
+                            {item.category}
+                          </span>
+                          <h4 className="text-xs md:text-sm font-light text-white tracking-wide leading-relaxed">
+                            {item.title}
+                          </h4>
+                        </div>
+                      </motion.div>
+                    ))}
+                  </AnimatePresence>
+                </motion.div>
               </section>
             </RevealSection>
 

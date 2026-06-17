@@ -25,7 +25,7 @@ export default function ManufacturingClient() {
           pin: true,
           scrub: 1,
           snap: 1 / (panels.length - 1),
-          end: () => `+=${triggerRef.current.offsetWidth}`,
+          end: () => `+=${containerRef.current.scrollWidth - window.innerWidth}`,
           invalidateOnRefresh: true,
         },
       });
@@ -41,29 +41,43 @@ export default function ManufacturingClient() {
       idx: "01",
       title: "Raw Geometry Selection",
       subtitle: "Rough Stone Sorting",
-      desc: "Our master gemmologists select conflict-free octahedral diamonds from Botswana and Canada. Out of 10,000 carats, only 5 meet the inclusion clarity threshold required for our Vees Star standard.",
-      image: "/rough_sorting.png",
+      desc: "Our master gemmologists select conflict-free octahedral rough crystals. Out of 10,000 carats, only 5 meet the clarity threshold required for our Vees Star standard.",
+      image: "/rough daimond/CLEAR FACETS ROUGH (42).webp",
     },
     {
       idx: "02",
-      title: "Laser Structural Mapping",
+      title: "Laser Mapping & 3D CAD",
       subtitle: "Prism Blueprinting",
-      desc: "Inside our Chennai facility, high-precision lasers map the internal crystal lattice to identify grain lines. 3D models simulate facet layouts to maximize refractive return before cutting.",
-      image: "/laser_mapping.png",
+      desc: "Inside our Chennai facility, high-precision lasers map the internal crystal lattice to identify grain lines, while our digital designers model the custom ring mountings in 3D CAD.",
+      image: "/work image/cad-239174.webp",
     },
     {
       idx: "03",
-      title: "The Faceting Polishing",
-      subtitle: "Ancestral Precision",
-      desc: "Traditional iron wheels covered in diamond dust are used to align facets. Each brilliant segment is placed at precise angles to create a prism.",
-      image: "/diamond_polishing.png",
+      title: "Lost Wax Gold Casting",
+      subtitle: "Frame Fabrication",
+      desc: "Using advanced vacuum pressure castings, high-purity gold and platinum alloys are heated and vacuum-pressured into the mold to form the custom solitaire band mounting.",
+      image: "/work image/IMG-20251112-WA0056.webp",
     },
     {
       idx: "04",
-      title: "Setting the Prongs",
-      subtitle: "Flawless Metallurgy",
-      desc: "Platinum claws are burnished and rounded over the girdle using micro-pushers. This balances physical security and ambient light access.",
-      image: "/prong_setting.png",
+      title: "Artisan Hand Filing",
+      subtitle: "Metal Calibration",
+      desc: "Master bench jewelers refine and smooth the cast frames by hand using traditional micro-files, shaping each claw and calibration detail to absolute perfection.",
+      image: "/work image/IMG-20251112-WA0055.webp",
+    },
+    {
+      idx: "05",
+      title: "Micro-Prong Diamond Setting",
+      subtitle: "Gemstone Mounting",
+      desc: "Under 10x stereo zoom magnification, our setters mount the solitaire diamond and micro-pave stones, adjusting the prongs to securely clasp the girdle.",
+      image: "/work image/IMG-20251112-WA0057.webp",
+    },
+    {
+      idx: "06",
+      title: "Mirror Buffing & Shine",
+      subtitle: "High-Luster Finish",
+      desc: "Using high-speed buff wheels and fine luster compounds, the metal is polished to a flawless, reflective finish, bringing out the maximum sparkle of the custom solitaire.",
+      image: "/work image/IMG-20251112-WA0061.webp",
     },
   ];
 
@@ -91,7 +105,11 @@ export default function ManufacturingClient() {
       </motion.div>
 
       <div ref={triggerRef} className="w-full relative min-h-screen flex items-center overflow-hidden">
-        <div ref={containerRef} className="flex h-[75vh] flex-nowrap w-[400vw] z-10">
+        <div 
+          ref={containerRef} 
+          className="flex h-[75vh] flex-nowrap z-10"
+          style={{ width: `${steps.length * 100}vw` }}
+        >
           {steps.map((step, idx) => (
             <div key={idx} className="craft-panel w-screen h-full shrink-0 flex items-center justify-center px-6 md:px-24">
               <div className="glass-panel luxury-shadow w-full max-w-5xl h-full rounded-3xl p-8 md:p-12 border border-[#C9A84C]/10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative overflow-hidden group">

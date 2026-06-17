@@ -100,6 +100,29 @@ export default function BottomNavbar() {
   const [drawer, setDr] = useState(false);
   const [mounted, setM] = useState(false);
 
+  const getTabTitle = (name) => {
+    switch (name) {
+      case "Home": return "Vees Star Diamonds Home | GIA Diamond Showroom Chennai & Karaikudi";
+      case "About": return "About Vees Star Diamonds | Diamond Goldsmithing Heritage & Standards";
+      case "Build": return "Design Custom Diamond Rings Online | 3D Solitaire Configurator";
+      case "Store": return "Shop GIA Certified Solitaire Diamond Rings | Platinum Solitaires";
+      case "Gallery": return "Bespoke Diamond Jewellery Portfolio | Campaign Lookbook";
+      case "Menu": return "Open Showroom Menu & Services Navigation Drawer";
+      default: return "Vees Star Diamonds";
+    }
+  };
+
+  const getDrawerTitle = (name) => {
+    switch (name) {
+      case "Karaikudi": return "Vees Star Diamonds Karaikudi | Heritage Showroom Location";
+      case "Rough Diamonds": return "Traceable Conflict-Free Rough Diamonds Sourcing & Polishing Process";
+      case "Manufacturing": return "State of the Art Diamond Cutting & Jewellery Manufacturing Process";
+      case "Contact": return "Book a Private Diamond Consultation Appointment in Anna Nagar, Chennai";
+      case "VIP Desk": return "Call Vees Star Diamonds VIP Phone Desk";
+      default: return "Vees Star Diamonds Page Link";
+    }
+  };
+
   const path = pathname || "/";
   const activeIdx = TABS.slice(0, 5).findIndex((t) =>
     t.href === "/" ? path === "/" : path.startsWith(t.href)
@@ -272,14 +295,16 @@ export default function BottomNavbar() {
 
               if (isMenu) return (
                 <button key={tab.name} onClick={() => setDr(true)}
+                  title={getTabTitle(tab.name)}
                   style={{ ...shared, background: "none", border: "none", cursor: "pointer", padding: 0 }}
                 >{inner}</button>
               );
 
               return (
-                <a key={tab.name} href={tab.href}
+                <Link key={tab.name} href={tab.href}
+                  title={getTabTitle(tab.name)}
                   style={{ ...shared, textDecoration: "none" }}
-                >{inner}</a>
+                >{inner}</Link>
               );
             })}
           </div>
@@ -337,6 +362,7 @@ export default function BottomNavbar() {
                   const active = path === lnk.href;
                   return (
                     <Link key={lnk.name} href={lnk.href} onClick={() => setDr(false)}
+                      title={getDrawerTitle(lnk.name)}
                       style={{
                         display: "flex", alignItems: "center", justifyContent: "space-between",
                         padding: "15px 20px", borderRadius: 12,

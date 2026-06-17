@@ -343,7 +343,7 @@ export default function HomeClient() {
               {/* HTML5 video element */}
               <video
                 ref={videoRef}
-                src="/Model videos/1.MP4"
+                src="/Vees Star Final.mp4"
                 className="w-full h-full object-cover"
                 autoPlay
                 muted={isMuted}
@@ -381,40 +381,6 @@ export default function HomeClient() {
                 </Link>
               </div>
 
-              {/* Polaroid floating model card 1 (Top Right Overlay) */}
-              <motion.div
-                initial={{ rotate: -6, x: 20, y: -20, opacity: 0 }}
-                whileInView={{ rotate: -4, x: 0, y: 0, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.35, duration: 0.6 }}
-                className="absolute top-6 right-6 w-32 md:w-36 bg-[#14110F] border border-[#C9A84C]/15 p-2 rounded-xl shadow-2xl pointer-events-none hidden sm:block z-10"
-              >
-                <div className="aspect-[3/4] bg-neutral-900 rounded-lg overflow-hidden relative mb-2">
-                  <img src="/Model images/4.png" alt="Model Look 4" className="w-full h-full object-cover" loading="lazy" />
-                </div>
-                <div className="text-left">
-                  <span className="text-[7px] uppercase tracking-widest text-[#C9A84C] font-bold block">Look 04</span>
-                  <span className="text-[8.5px] text-[#FAF7F2] font-semibold block leading-tight truncate">Vees Muse Set</span>
-                </div>
-              </motion.div>
-
-              {/* Polaroid floating model card 2 (Bottom Left Overlay) */}
-              <motion.div
-                initial={{ rotate: 8, x: -20, y: 20, opacity: 0 }}
-                whileInView={{ rotate: 6, x: 0, y: 0, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.45, duration: 0.6 }}
-                className="absolute bottom-6 left-6 w-32 md:w-36 bg-[#14110F] border border-[#C9A84C]/15 p-2 rounded-xl shadow-2xl pointer-events-none hidden sm:block z-10"
-                style={{ bottom: "80px" }} // Lift above bottom controls
-              >
-                <div className="aspect-[3/4] bg-neutral-900 rounded-lg overflow-hidden relative mb-2">
-                  <img src="/Model images/10.png" alt="Model Look 10" className="w-full h-full object-cover" loading="lazy" />
-                </div>
-                <div className="text-left">
-                  <span className="text-[7px] uppercase tracking-widest text-[#C9A84C] font-bold block">Look 10</span>
-                  <span className="text-[8.5px] text-[#FAF7F2] font-semibold block leading-tight truncate">Empress Band</span>
-                </div>
-              </motion.div>
 
              </motion.div>
 
@@ -486,11 +452,11 @@ export default function HomeClient() {
               <div className="space-y-3 pt-6 border-t border-[#C9A84C]/10 text-[9px] tracking-[0.2em] uppercase text-[#7A6E66] font-bold leading-relaxed">
                 <div>
                   <span className="text-[#C9A84C] block mb-0.5">Contact Info</span>
-                  <span className="text-[#C4BAB0] font-light">0843082982</span>
+                  <span className="text-[#C4BAB0] font-light">+91 93830 07477 / +91 98848 56057</span>
                 </div>
                 <div>
                   <span className="text-[#C9A84C] block mb-0.5">Email</span>
-                  <span className="text-[#C4BAB0] font-light text-neutral-300">SALES@VEESSTAR.IN</span>
+                  <span className="text-[#C4BAB0] font-light text-neutral-300">vsdjbusiness@gmail.com</span>
                 </div>
                 <div>
                   <span className="text-[#C9A84C] block mb-0.5">Showroom Location</span>

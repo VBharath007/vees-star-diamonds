@@ -139,7 +139,7 @@ export default function LifetimeServiceClient() {
                  We ensure that our craftsmanship is to the highest standards and repair all items made by Vees Star Diamonds. You may either bring your item to our store or send in your item by mail.
                </p>
                <p className="text-[#C4BAB0] text-sm leading-relaxed font-light">
-                 After we make an assessment, we will send you a free estimate. At this time, we can only accept shipments from clients residing in India. You may call us at +91 93830 07477 for assistance.
+                 After we make an assessment, we will send you a free estimate. At this time, we can only accept shipments from clients residing in India. You may call us at +91 93830 07477 / +91 98848 56057 for assistance.
                </p>
             </motion.div>
           </div>
