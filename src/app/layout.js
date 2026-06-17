@@ -24,9 +24,9 @@ const jost = Jost({
 export const metadata = {
   metadataBase: new URL("https://www.veesstardiamonds.com"),
   icons: {
-    icon: "/VEES STAR LOGO 1.png",
-    shortcut: "/VEES STAR LOGO 1.png",
-    apple: "/VEES STAR LOGO 1.png",
+    icon: "/VEES%20STAR%20LOGO%201.png",
+    shortcut: "/VEES%20STAR%20LOGO%201.png",
+    apple: "/VEES%20STAR%20LOGO%201.png",
   },
   title: {
     default: "Vees Star Diamonds | GIA Certified Solitaires Chennai",
@@ -96,9 +96,6 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`light ${cormorant.variable} ${jost.variable}`}>
       <head>
         <link rel="preconnect" href="https://api.whatsapp.com" />
-        <link rel="icon" type="image/png" href="/VEES STAR LOGO 1.png" />
-        <link rel="shortcut icon" type="image/png" href="/VEES STAR LOGO 1.png" />
-        <link rel="apple-touch-icon" href="/VEES STAR LOGO 1.png" />
       </head>
       <body className="bg-[#0E0C0A] text-[#FAF7F2] antialiased">
         <ThreeBackgroundWrapper />

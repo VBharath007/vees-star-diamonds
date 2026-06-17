@@ -69,7 +69,14 @@ export default function HomeClient() {
     if (isPlaying) {
       videoRef.current.pause();
     } else {
-      videoRef.current.play().catch(err => console.log(err));
+      const playPromise = videoRef.current.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(err => {
+          if (err.name !== "AbortError") {
+            console.log(err);
+          }
+        });
+      }
     }
     setIsPlaying(!isPlaying);
   };

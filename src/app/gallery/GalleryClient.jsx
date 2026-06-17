@@ -152,7 +152,14 @@ export default function GalleryClient() {
     if (isPlaying) {
       videoRef.current.pause();
     } else {
-      videoRef.current.play().catch(err => console.log("Video play interrupted:", err));
+      const playPromise = videoRef.current.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(err => {
+          if (err.name !== "AbortError") {
+            console.log("Video play interrupted:", err);
+          }
+        });
+      }
     }
     setIsPlaying(!isPlaying);
   };
@@ -190,7 +197,14 @@ export default function GalleryClient() {
     if (videoRef.current) {
       videoRef.current.load();
       setTimeout(() => {
-        videoRef.current.play().catch(err => console.log("Play failed after switch:", err));
+        const playPromise = videoRef.current.play();
+        if (playPromise !== undefined) {
+          playPromise.catch(err => {
+            if (err.name !== "AbortError") {
+              console.log("Play failed after switch:", err);
+            }
+          });
+        }
       }, 150);
     }
   };

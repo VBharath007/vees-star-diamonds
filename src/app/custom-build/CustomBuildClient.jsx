@@ -170,11 +170,16 @@ export default function CustomBuildClient() {
   const videoRef = useRef(null);
 
   useEffect(() => {
-    if (videoRef.current) {
+    if (videoRef.current && selectedMedia.type === "video") {
       videoRef.current.load();
-      videoRef.current.play().catch(err => {
-        console.warn("Video play interrupted or blocked by browser:", err);
-      });
+      const playPromise = videoRef.current.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(err => {
+          if (err.name !== "AbortError") {
+            console.warn("Video play interrupted or blocked by browser:", err);
+          }
+        });
+      }
     }
   }, [selectedMedia]);
 

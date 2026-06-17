@@ -57,9 +57,6 @@ export default function Footer() {
             <Link href="/gallery" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block text-[#C9A84C] font-bold" title="Sovereign Heritage Diamond Jewellery Collection Campaign Lookbook">Campaign Lookbook</Link>
             <Link href="/gallery" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block" title="Browse Handcrafted Diamond Jewellery Collections">All Collections</Link>
             <Link href="/custom-build" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block" title="Design Custom Diamond Rings Online | 3D Solitaire Configurator">Custom Rings</Link>
-            <Link href="/solitaires" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block" title="Shop GIA Certified Solitaire Diamond Rings | Platinum Solitaires">Diamond Rings</Link>
-            <Link href="/gallery/pendants" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block" title="Handcrafted Solitaire Diamond Pendants & Necklaces">Pendants</Link>
-            <Link href="/gallery/earrings" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block" title="Handcrafted Solitaire Diamond Earrings & Studs">Ear Rings</Link>
             <Link href="/gallery/bracelets" className="hover:text-[#C9A84C] hover:translate-x-1.5 transition-all duration-300 inline-block" title="Handcrafted Solitaire Diamond Bracelets & Bangles">Bracelets</Link>
           </div>
         </div>
