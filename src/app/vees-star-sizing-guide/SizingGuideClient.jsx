@@ -60,7 +60,7 @@ export default function SizingGuideClient() {
                  01 / Ring Size
                </span>
                <h2 className="text-3xl font-light text-[#FAF7F2] leading-tight">
-                 Finding the <em className="italic text-[#C9A84C] not-italic" style={{ fontStyle: "italic" }}>Perfect</em> Fit
+                 Finding the <em className="italic text-[#C9A84C]">Perfect</em> Fit
                </h2>
                <p className="text-[#C4BAB0] text-sm leading-relaxed font-light">
                  A perfectly sized ring ensures both absolute comfort and the safety of your precious solitaire.
@@ -80,7 +80,7 @@ export default function SizingGuideClient() {
                02 / Bangle Measurement
              </span>
              <h2 className="text-3xl font-light text-[#FAF7F2] leading-tight">
-               Bangle <em className="italic text-[#C9A84C] not-italic" style={{ fontStyle: "italic" }}>Sizing Guide</em>
+               Bangle <em className="italic text-[#C9A84C]">Sizing Guide</em>
              </h2>
           </motion.div>
 

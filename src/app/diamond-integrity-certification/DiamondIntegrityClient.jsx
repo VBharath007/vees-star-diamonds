@@ -57,7 +57,7 @@ export default function DiamondIntegrityClient() {
                  01 / Verification
                </span>
                <h2 className="text-3xl font-light text-[#FAF7F2] leading-tight">
-                 International <em className="italic text-[#C9A84C] not-italic" style={{ fontStyle: "italic" }}>Standards</em>
+                 International <em className="italic text-[#C9A84C]">Standards</em>
                </h2>
                <p className="text-[#C4BAB0] text-sm leading-relaxed font-light">
                  Every masterpiece requires authentication. We ensure that our diamonds are graded by the most rigorous gemological authorities globally.
@@ -78,7 +78,7 @@ export default function DiamondIntegrityClient() {
                  02 / The Vees Star Promise
                </span>
                <h2 className="text-3xl font-light text-[#FAF7F2] leading-tight">
-                 Solitaire <em className="italic text-[#C9A84C] not-italic" style={{ fontStyle: "italic" }}>Excellence</em>
+                 Solitaire <em className="italic text-[#C9A84C]">Excellence</em>
                </h2>
                <p className="text-[#C4BAB0] text-sm leading-relaxed font-light">
                  We do not compromise on clarity or confidence. The certificate you receive is the ultimate proof of value and precision for your investment.
@@ -115,7 +115,7 @@ export default function DiamondIntegrityClient() {
                  03 / Traceability
                </span>
                <h2 className="text-3xl font-light text-[#FAF7F2] leading-tight">
-                 A Mark of <em className="italic text-[#C9A84C] not-italic" style={{ fontStyle: "italic" }}>Integrity</em>
+                 A Mark of <em className="italic text-[#C9A84C]">Integrity</em>
                </h2>
                <p className="text-[#C4BAB0] text-sm leading-relaxed font-light">
                  Your peace of mind is paramount. Our tracking systems ensure that from the moment of origin to the final setting, your diamond remains unequivocally pure.

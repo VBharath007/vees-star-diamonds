@@ -60,7 +60,7 @@ export default function CleaningGuideClient() {
                  01 / Balance
                </span>
                <h2 className="text-3xl font-light text-[#FAF7F2] leading-tight">
-                 Finding the Right <em className="italic text-[#C9A84C] not-italic" style={{ fontStyle: "italic" }}>Frequency</em>
+                 Finding the Right <em className="italic text-[#C9A84C]">Frequency</em>
                </h2>
                <p className="text-[#C4BAB0] text-sm leading-relaxed font-light">
                  Protecting your investment means knowing exactly when and how to cleanse the precious metals and stones.
@@ -81,7 +81,7 @@ export default function CleaningGuideClient() {
                  02 / Fragile Materials
                </span>
                <h2 className="text-3xl font-light text-[#FAF7F2] leading-tight">
-                 Maintaining Fine <em className="italic text-[#C9A84C] not-italic" style={{ fontStyle: "italic" }}>Gems</em>
+                 Maintaining Fine <em className="italic text-[#C9A84C]">Gems</em>
                </h2>
                <p className="text-[#C4BAB0] text-sm leading-relaxed font-light">
                  Most fine jewellery should only be cleaned every other month or so to prevent unnecessary exposure to liquids. Be sure to use a gentle method and avoid ultrasonic cleaners or steamers.
@@ -136,7 +136,7 @@ export default function CleaningGuideClient() {
                  03 / Gentle Cleaning
                </span>
                <h2 className="text-3xl font-light text-[#FAF7F2] leading-tight">
-                 Safely Cleaning Fine <em className="italic text-[#C9A84C] not-italic" style={{ fontStyle: "italic" }}>Jewellery</em>
+                 Safely Cleaning Fine <em className="italic text-[#C9A84C]">Jewellery</em>
                </h2>
                <p className="text-[#C4BAB0] text-sm leading-relaxed font-light">
                  The most gentle way to clean fine jewellery is to do so at home using this DIY solution: a dish, lukewarm water, a soft-bristle toothbrush, and some mild dish detergent. The milder the soap, the better.

@@ -57,7 +57,7 @@ export default function DiamondGuideClient() {
                  01 / Clarity
                </span>
                <h2 className="text-3xl font-light text-[#FAF7F2] leading-tight">
-                 A Window to <em className="italic text-[#C9A84C] not-italic" style={{ fontStyle: "italic" }}>Perfection</em>
+                 A Window to <em className="italic text-[#C9A84C]">Perfection</em>
                </h2>
                <p className="text-[#C4BAB0] text-sm leading-relaxed font-light">
                  At Vees Star, we examine every diamond under intense magnification to ensure the highest optical performance.
@@ -78,7 +78,7 @@ export default function DiamondGuideClient() {
                  02 / Color Grading
                </span>
                <h2 className="text-3xl font-light text-[#FAF7F2] leading-tight">
-                 The D-Z <em className="italic text-[#C9A84C] not-italic" style={{ fontStyle: "italic" }}>Spectrum</em>
+                 The D-Z <em className="italic text-[#C9A84C]">Spectrum</em>
                </h2>
                <p className="text-[#C4BAB0] text-sm leading-relaxed font-light">
                  The natural color of a diamond is one of the standard 4Cs of diamond quality. White diamonds are available in colors ranging from D – Z, with D diamonds having no hue and displaying the greatest brilliance.

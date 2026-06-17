@@ -60,7 +60,7 @@ export default function PrimaryGoldClient() {
                  01 / Heritage
                </span>
                <h2 className="text-3xl font-light text-[#FAF7F2] leading-tight">
-                 Thousands of Years of <em className="italic text-[#C9A84C] not-italic" style={{ fontStyle: "italic" }}>Craft</em>
+                 Thousands of Years of <em className="italic text-[#C9A84C]">Craft</em>
                </h2>
                <p className="text-[#C4BAB0] text-sm leading-relaxed font-light">
                  From ancient royalties to modern master artisans, gold remains the foundational canvas for high jewellery.
@@ -81,7 +81,7 @@ export default function PrimaryGoldClient() {
                  02 / Malleability
                </span>
                <h2 className="text-3xl font-light text-[#FAF7F2] leading-tight">
-                 Easy to <em className="italic text-[#C9A84C] not-italic" style={{ fontStyle: "italic" }}>Work</em>
+                 Easy to <em className="italic text-[#C9A84C]">Work</em>
                </h2>
                <p className="text-[#C4BAB0] text-sm leading-relaxed font-light">
                  Gold nuggets found in a stream are very easy to work, making gold one of the first metals ever manipulated by early mankind.

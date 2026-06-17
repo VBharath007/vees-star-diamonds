@@ -57,7 +57,7 @@ export default function ConflictFreeDiamondsClient() {
                  01 / Definition
                </span>
                <h2 className="text-3xl font-light text-[#FAF7F2] leading-tight">
-                 What is a <em className="italic text-[#C9A84C] not-italic" style={{ fontStyle: "italic" }}>Conflict-Free</em> Diamond?
+                 What is a <em className="italic text-[#C9A84C]">Conflict-Free</em> Diamond?
                </h2>
                <p className="text-[#C4BAB0] text-sm leading-relaxed font-light">
                  True luxury cannot be born from suffering. We ensure our supply chain remains uncompromised from origin to your hands.
@@ -78,7 +78,7 @@ export default function ConflictFreeDiamondsClient() {
                  02 / Reliable Origins
                </span>
                <h2 className="text-3xl font-light text-[#FAF7F2] leading-tight">
-                 Truly <em className="italic text-[#C9A84C] not-italic" style={{ fontStyle: "italic" }}>Ethical</em> Sources
+                 Truly <em className="italic text-[#C9A84C]">Ethical</em> Sources
                </h2>
                <p className="text-[#C4BAB0] text-sm leading-relaxed font-light">
                  There are only a few reliable sources for truly Conflict Free Diamonds or Ethically Sourced Diamonds. Australia, Canada, and Botswana Africa are the most well-known and prolific.
@@ -115,7 +115,7 @@ export default function ConflictFreeDiamondsClient() {
                  03 / Vees Star Standards
                </span>
                <h2 className="text-3xl font-light text-[#FAF7F2] leading-tight">
-                 What Sets Us <em className="italic text-[#C9A84C] not-italic" style={{ fontStyle: "italic" }}>Apart</em>
+                 What Sets Us <em className="italic text-[#C9A84C]">Apart</em>
                </h2>
                <p className="text-[#C4BAB0] text-sm leading-relaxed font-light">
                  These suppliers are required to source diamonds that originate from specific mine operations or specific countries that have demonstrated their commitment to follow internationally recognized labor, trade, and environmental standards.

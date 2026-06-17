@@ -66,7 +66,7 @@ export default function RoughDiamondsClient() {
                  01 / Origins
                </span>
                <h2 className="text-3xl font-light text-[#FAF7F2] leading-tight">
-                 The <em className="italic text-[#C9A84C] not-italic" style={{ fontStyle: "italic" }}>Kimberly</em> Standard
+                 The <em className="italic text-[#C9A84C]">Kimberly</em> Standard
                </h2>
                <p className="text-[#C4BAB0] text-sm leading-relaxed font-light">
                  Ensuring conflict-free origins allows us to confidently pass on a legacy of purity to our clients.
@@ -114,7 +114,7 @@ export default function RoughDiamondsClient() {
                  02 / Polishing
                </span>
                <h2 className="text-3xl font-light text-[#FAF7F2] leading-tight">
-                 Nature & <em className="italic text-[#C9A84C] not-italic" style={{ fontStyle: "italic" }}>Man</em>
+                 Nature & <em className="italic text-[#C9A84C]">Man</em>
                </h2>
                <p className="text-[#C4BAB0] text-sm leading-relaxed font-light">
                  Our diamond is the result of a close collaboration between nature and man: after nature provides the raw material, our craftsmen use their skill and sheer love for their work to produce a stone expertly cut and polished to reveal its brilliance.
@@ -162,7 +162,7 @@ export default function RoughDiamondsClient() {
                  03 / Trust
                </span>
                <h2 className="text-3xl font-light text-[#FAF7F2] leading-tight">
-                 Sight Unseen, <em className="italic text-[#C9A84C] not-italic" style={{ fontStyle: "italic" }}>Recorded</em>
+                 Sight Unseen, <em className="italic text-[#C9A84C]">Recorded</em>
                </h2>
                <p className="text-[#C4BAB0] text-sm leading-relaxed font-light">
                  Why would you ever let something so beautiful out of your sight? We ensure an unbroken chain of custody for complete peace of mind.
