@@ -315,14 +315,14 @@ Could you please share the design blueprint or pricing estimates?`;
 
             {/* Active Specs Header */}
             <div className="flex justify-between items-center relative z-10 shrink-0 mb-3 px-1">
-              <span className="text-[9px] font-bold text-[#C9A84C] uppercase tracking-[0.15em]">
+              <span className="text-[9px] font-bold text-[#C9A84C] uppercase tracking-[0.15em] whitespace-nowrap">
                 Live Showcase
               </span>
               <div className="flex items-center gap-2">
-                <span className="px-2.5 py-1 rounded-full text-[9px] font-bold uppercase tracking-wider bg-[#C9A84C]/10 border border-[#C9A84C]/30 text-[#C9A84C]">
+                <span className="px-2.5 py-1 rounded-full text-[9px] font-bold uppercase tracking-wider bg-[#C9A84C]/10 border border-[#C9A84C]/30 text-[#C9A84C] whitespace-nowrap">
                   {selectedMedia.metal}
                 </span>
-                <span className="px-2.5 py-1 rounded-full text-[9px] font-bold uppercase tracking-wider bg-white/5 border border-white/10 text-white">
+                <span className="px-2.5 py-1 rounded-full text-[9px] font-bold uppercase tracking-wider bg-white/5 border border-white/10 text-white whitespace-nowrap">
                   {selectedMedia.carats}
                 </span>
               </div>

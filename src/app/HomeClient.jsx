@@ -363,28 +363,28 @@ export default function HomeClient() {
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300 pointer-events-none" />
 
               {/* Custom Controller Overlays */}
-              <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between z-20">
-                <div className="flex items-center space-x-3">
+              <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 flex items-center justify-between z-20">
+                <div className="flex items-center space-x-2 sm:space-x-3">
                   <button
                     onClick={togglePlay}
-                    className="p-2.5 rounded-full bg-[#0E0C0A]/80 backdrop-blur-md border border-[#C9A84C]/25 text-[#FAF7F2] hover:text-[#C9A84C] hover:border-[#C9A84C] transition-all cursor-pointer"
+                    className="p-2 sm:p-2.5 rounded-full bg-[#0E0C0A]/80 backdrop-blur-md border border-[#C9A84C]/25 text-[#FAF7F2] hover:text-[#C9A84C] hover:border-[#C9A84C] transition-all cursor-pointer"
                   >
-                    {isPlaying ? <Pause className="w-3.5 h-3.5" /> : <Play className="w-3.5 h-3.5 fill-current" />}
+                    {isPlaying ? <Pause className="w-3 h-3 sm:w-3.5 sm:h-3.5" /> : <Play className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-current" />}
                   </button>
                   <button
                     onClick={toggleMute}
-                    className="p-2.5 rounded-full bg-[#0E0C0A]/80 backdrop-blur-md border border-[#C9A84C]/25 text-[#FAF7F2] hover:text-[#C9A84C] hover:border-[#C9A84C] transition-all cursor-pointer"
+                    className="p-2 sm:p-2.5 rounded-full bg-[#0E0C0A]/80 backdrop-blur-md border border-[#C9A84C]/25 text-[#FAF7F2] hover:text-[#C9A84C] hover:border-[#C9A84C] transition-all cursor-pointer"
                   >
-                    {isMuted ? <VolumeX className="w-3.5 h-3.5" /> : <Volume2 className="w-3.5 h-3.5" />}
+                    {isMuted ? <VolumeX className="w-3 h-3 sm:w-3.5 sm:h-3.5" /> : <Volume2 className="w-3 h-3 sm:w-3.5 sm:h-3.5" />}
                   </button>
                 </div>
 
                 <Link 
                   href="/gallery"
-                  className="flex items-center space-x-2 bg-[#0E0C0A]/80 backdrop-blur-md border border-[#C9A84C]/20 px-4 py-2.5 rounded-full text-[9px] uppercase tracking-widest text-[#C9A84C] font-extrabold hover:bg-[#C9A84C] hover:text-[#0E0C0A] transition-all shadow-lg cursor-pointer"
+                  className="flex items-center space-x-1.5 sm:space-x-2 bg-[#0E0C0A]/80 backdrop-blur-md border border-[#C9A84C]/20 px-3 py-2 sm:px-4 sm:py-2.5 rounded-full text-[8px] sm:text-[9px] uppercase tracking-widest text-[#C9A84C] font-extrabold hover:bg-[#C9A84C] hover:text-[#0E0C0A] transition-all shadow-lg cursor-pointer whitespace-nowrap"
                 >
                   <span>Interactive Gallery</span>
-                  <ArrowRight className="w-3 h-3" />
+                  <ArrowRight className="w-2.5 h-2.5 sm:w-3 sm:h-3" />
                 </Link>
               </div>
 
